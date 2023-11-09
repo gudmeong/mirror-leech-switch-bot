@@ -382,7 +382,7 @@ aria2 = ariaAPI(ariaClient(host="http://localhost", port=6800, secret=""))
 def get_client():
     return qbClient(host="localhost", port=8090, VERIFY_WEBUI_CERTIFICATE=False, REQUESTS_ARGS={'timeout': (30, 60)})
 
-
+"""
 def aria2c_init():
     try:
         log_info("Initializing Aria2c")
@@ -399,7 +399,7 @@ def aria2c_init():
 
 Thread(target=aria2c_init).start()
 sleep(1.5)
-
+"""
 aria2c_global = ['bt-max-open-files', 'download-result', 'keep-unfinished-download-result', 'log', 'log-level',
                  'max-concurrent-downloads', 'max-download-result', 'max-overall-download-limit', 'save-session',
                  'max-overall-upload-limit', 'optimize-concurrent-downloads', 'save-cookies', 'server-stat-of']
